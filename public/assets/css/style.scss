@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid-template {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "topo topo topo"
+        "tv tv tv"
+        "delivery gastronomia lojas"
+        "foto foto estetica"
+        "foto foto mural"
+        "agenda agenda cashback"
+        "agenda agenda cashback";
+}
+
+.topo {
+    grid-area: topo;
+    height: 312px;
+    background: linear-gradient(314.65deg, #230a44 -0.61%, #4a299f 100%);
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        img{
+            width: 90%;
+        }
+    }
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .destaque-item {
+        height: auto;
+    }
+    .destaque-logo {
+        text-align: center;
+        margin: 0 auto;
+        width: 76px;
+        height: 76px;
+        border: 3.55px solid transparent;
+        border-radius: 50%;
+        background-image: radial-gradient(
+            circle at top left,
+            #fbaa47 13.86%,
+            #d91a46 51.04%,
+            #a60f93 85.38%
+        );
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: #ccc;
+            font-family: Barlow;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+    }
+}
+
+.tv {
+    grid-area: tv;
+    height: 173px;
+    background: #f75111;
+    .shoppingtv {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a img:first-child {
+        width: 246px;
+        height: 129px;
+    }
+}
+
+.delivery {
+    grid-area: delivery;
+    height: 134px;
+    background: #6c1cd1;
+}
+
+.gastronomia {
+    grid-area: gastronomia;
+    height: 134px;
+    background-color: #7879f1;
+}
+
+.lojas {
+    grid-area: lojas;
+    height: 134px;
+    background-color: #230a44;
+}
+
+.foto {
+    grid-area: foto;
+    height: 270px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.estetica {
+    grid-area: estetica;
+    background-color: #e41d7f;
+}
+
+.mural {
+    grid-area: mural;
+    background-color: #6c1cd1;
+}
+
+.agenda {
+    grid-area: agenda;
+    height: 183px;
+    background-color: #230a44;
+    a {
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.cashback {
+    grid-area: cashback;
+    height: 183px;
+    background-color: #f75111;
+}
+.item {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        height: auto;
+        color: #ccc;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    a img {
+        width: 52px;
+        height: 52px;
+    }
+}

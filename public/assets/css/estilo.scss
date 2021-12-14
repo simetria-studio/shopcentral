@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: linear-gradient(314.65deg, #230a44 -0.61%, #4a299f 100%);
+}
+header {
+    .topo-colorido {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 8.02px;
+        .laranja {
+            background-color: #f75111;
+        }
+        .roxo {
+            background-color: #6c1cd1;
+        }
+        .rosa {
+            background-color: #e41d7f;
+        }
+        .branco {
+            background-color: #ccc;
+        }
+    }
+    background-color: #230a44;
+    width: 100%;
+    height: 203px;
+    position: relative;
+    .voltar {
+        width: 147px;
+        height: 43px;
+    }
+    .btn-voltar {
+        font-size: 20px;
+        font-weight: 500;
+        color: #ccc;
+        background-color: #6c1cd1;
+        border: #6c1cd1 1px solid;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    }
+    .btn-voltar:hover {
+        background-color: #ccc;
+        color: #6c1cd1;
+    }
+    .voltar {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+}
+main {
+    .pesquisa {
+        width: 100%;
+        display: flex;
+    }
+    .pesquisa > input {
+        width: 90%;
+        background: transparent;
+        border: none;
+        color: #ccc;
+        outline: none;
+    }
+    .pesquisa > input:hover {
+        outline: none;
+        background: transparent;
+        border: none;
+        color: #ccc;
+    }
+    .pesquisa > input::placeholder {
+        color: #ccc;
+    }
+    .pesquisa > span {
+        width: 10%;
+        background-color: transparent;
+    }
+    .pesquisa > span > i {
+        color: #ccc;
+    }
+}
+
+// Cabeçalho
+.tv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.shoppingtv {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    text-transform: uppercase;
+    font-family: Barlow;
+    font-size: 23px;
+    font-weight: 900;
+    span {
+        padding-left: 10px;
+    }
+}
+// Corpo
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.video-item {
+    background-color: #6c1cd1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    .thumb {
+        position: relative;
+        height: 80%;
+        img {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            object-fit: cover;
+        }
+    }
+    .titulo-video {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            text-align: center;
+            color: #ccc;
+            font-family: Barlow;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+    .play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .btn-play {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 90px;
+            height: 90px;
+        }
+        button > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.estabelecimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    .local-loja {
+        margin-bottom: 30px;
+    }
+    .logotipo {
+        background-color: #ccc;
+        height: auto;
+        border-radius: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logotipo > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 11px;
+        object-fit: fill;
+    }
+    .nome {
+        background: transparent;
+        text-align: center;
+        h6 {
+            margin-top: 10px;
+            color: #ccc;
+        }
+    }
+    .contatos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .instagram, .telegram, .whatsapp {
+            display: flex;
+            justify-content: center;
+            a {
+                img {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+    }
+}
